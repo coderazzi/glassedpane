@@ -73,6 +73,16 @@ This component is available with the MIT open source license (see below its text
 *   Version 1.0.0 (20th November 2009)
     *   [glasspane-1-0-0.zip](https://coderazzi.net/glassedpane/glasspane-1-0-0.zip)
 
+As of January 2025, this project has been mavenized, and the underlying git repository made [public](https://github.com/coderazzi/glassedpane)
+
+To build the library, use:
+
+    mvn package
+
+To execute the example, use:
+
+    mvn exec:java
+
 License
 -------
 
