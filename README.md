@@ -24,41 +24,41 @@ There are two working components in action: the GlassPane, blocking the content,
 Usage and javadoc
 -----------------
 
-The javadoc information for the library is available [here](api/index.html)
+The javadoc information for the library is available [here](https://coderazzi.net/glassedpane/api/index.html)
 
 The following code, extracted from the test included in the distribution, shows how the GlassedPane is implemented in the example above:
 
-//initialization, empty constructor
-net.coderazzi.glasspane.GlassedPane glassPane = new net.coderazzi.glasspane.GlassedPane();
-
-//set the layout. It is a normal container
-glassPane.getContentPane().setLayout(new java.awt.BorderLayout());
-
-//add the normal component
-glassPane.getContentPane().add(jScrollPane2, java.awt.BorderLayout.CENTER);
-
-//add the glasspane itself to a swing container
-jSplitPane1.setLeftComponent(glassPane);
+    //initialization, empty constructor
+    net.coderazzi.glasspane.GlassedPane glassPane = new net.coderazzi.glasspane.GlassedPane();
+    
+    //set the layout. It is a normal container
+    glassPane.getContentPane().setLayout(new java.awt.BorderLayout());
+    
+    //add the normal component
+    glassPane.getContentPane().add(jScrollPane2, java.awt.BorderLayout.CENTER);
+    
+    //add the glasspane itself to a swing container
+    jSplitPane1.setLeftComponent(glassPane);
 
 Afterwards, the glass pane can be visualized / hidden using code such as:
 
-glassPane.getGlassPane().setVisible(booleanValue);
+    glassPane.getGlassPane().setVisible(booleanValue);
 
 Default behaviour
 -----------------
 
 By default, the content pane is a [JPanel](http://java.sun.com/javase/6/docs/api/javax/swing/JPanel.html), although the user can setup any other swing container instead.
 
-Also by default, the glass pane is a [GlassPane](doc/api/net/coderazzi/glasspane/GlassPane.html). However, any other component can be instantiated by default, just by overriding the system property "net.coderazzi.glasspane.glassclass", defined as [GlassedPane.GLASS\_CLASS\_PROPERTY](doc/api/net/coderazzi/glasspane/GlassedPane.html#GLASS_CLASS_PROPERTY). Obviously, it is also possible to use the normal API to set other component, using the method [GlassedPane.setGlassPane](doc/api/net/coderazzi/glasspane/GlassedPane.html#setGlassPane(java.awt.Component))
+Also by default, the glass pane is a [GlassPane](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/GlassPane.html). However, any other component can be instantiated by default, just by overriding the system property "net.coderazzi.glasspane.glassclass", defined as [GlassedPane.GLASS\_CLASS\_PROPERTY](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/GlassedPane.html#GLASS_CLASS_PROPERTY). Obviously, it is also possible to use the normal API to set other component, using the method [GlassedPane.setGlassPane](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/GlassedPane.html#setGlassPane(java.awt.Component))
 
 The default glass pane merely blocks the user access to the content behind, and is displayed in a grayed semitransparent color. It is possible to define also the default color and degree of transparency, using system properties:
 
-*   Change the default background, by defining the system property "net.coderazzi.glasspane.glasscolor", defined as [GlassPane.GLASS\_COLOR\_PROPERTY](doc/api/net/coderazzi/glasspane/GlassPane.html#GLASS_COLOR_PROPERTY)
-*   Change the transparency level, by defining the system property "net.coderazzi.glasspane.glasstransparency", defined as [GlassPane.GLASS\_TRANSPARENCY\_PROPERTY](doc/api/net/coderazzi/glasspane/GlassPane.html#GLASS_TRANSPARENCY_PROPERTY)
+*   Change the default background, by defining the system property "net.coderazzi.glasspane.glasscolor", defined as [GlassPane.GLASS\_COLOR\_PROPERTY](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/GlassPane.html#GLASS_COLOR_PROPERTY)
+*   Change the transparency level, by defining the system property "net.coderazzi.glasspane.glasstransparency", defined as [GlassPane.GLASS\_TRANSPARENCY\_PROPERTY](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/GlassPane.html#GLASS_TRANSPARENCY_PROPERTY)
 
-Alternatively, it is possible to just invoke [GlassPane.setColor](doc/api/net/coderazzi/glasspane/GlassPane.html#setColor(java.awt.Color)) on the GlassPane instance.
+Alternatively, it is possible to just invoke [GlassPane.setColor](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/GlassPane.html#setColor(java.awt.Color)) on the GlassPane instance.
 
-The library is provided with a second GlassPane, [LabelGlassPane](doc/api/net/coderazzi/glasspane/LabelGlassPane.html), with adds a [JLabel](http://www.j2ee.me/javase/6/docs/api/javax/swing/JLabel.html), centered automatically in the GlassPane. It is possible to setup a message or an icon. By default, it will use the icon found on the system property "net.coderazzi.glasspane.labelicon", defined as [LabelGlassPane.GLASS\_MESSAGE\_ICON\_PROPERTY](doc/api/net/coderazzi/glasspane/LabelGlassPane.html#GLASS_MESSAGE_ICON_PROPERTY).
+The library is provided with a second GlassPane, [LabelGlassPane](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/LabelGlassPane.html), with adds a [JLabel](http://www.j2ee.me/javase/6/docs/api/javax/swing/JLabel.html), centered automatically in the GlassPane. It is possible to setup a message or an icon. By default, it will use the icon found on the system property "net.coderazzi.glasspane.labelicon", defined as [LabelGlassPane.GLASS\_MESSAGE\_ICON\_PROPERTY](https://coderazzi.net/glassedpane/api/net/coderazzi/glasspane/LabelGlassPane.html#GLASS_MESSAGE_ICON_PROPERTY).
 
 Similar functionality
 ---------------------
@@ -71,7 +71,7 @@ Download
 This component is available with the MIT open source license (see below its text).
 
 *   Version 1.0.0 (20th November 2009)
-    *   [glasspane-1-0-0.zip](dist/glasspane-1-0-0.zip)
+    *   [glasspane-1-0-0.zip](https://coderazzi.net/glassedpane/glasspane-1-0-0.zip)
 
 License
 -------
